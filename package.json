@@ -1,0 +1,28 @@
+{
+    "name": "github-api-call",
+    "version": "0.0.1",
+    "description": "",
+    "scripts": {
+        "build": "turbo run build",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "postversion": "changelog-version-bump.sh $npm_package_version",
+        "start": "node apps/server/src/app.js"
+    },
+    "repository": "",
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "/"
+    },
+    "homepage": "",
+    "devDependencies": {
+        "nodemon": "^2.0.15",
+        "turbo": "^1.1.10"
+    },
+    "workspaces": [
+        "apps/*"
+    ],
+    "main": "index.js",
+    "private": true
+}
